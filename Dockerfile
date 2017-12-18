@@ -17,4 +17,5 @@ RUN  npm install \
 #将dist目录copy到nginx目录下
 #删除工作目录减少镜像体积
 CMD ["nginx","-g","daemon off;"]
+
 #以前台的方式启动nginx服务
