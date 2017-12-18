@@ -1,6 +1,7 @@
 FROM node:6.10.3-slim
 #node6.10.3精简版做开发镜像
-RUN apt-get update \    && apt-get install -y nginx
+RUN apt-get update \   
+    && apt-get install -y nginx
 #安装 nginx
 WORKDIR /app
 #指定工作路径
