@@ -1,0 +1,43 @@
+//mixin
+@import '../../style/css/mixin.scss';
+.home {
+  width: 100%;
+  height: 100%;
+  background-color: $BgColor;
+  .product-swipe {
+    height: rem(300);
+    .mint-swipe-item.picItem img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .nav {
+    height: rem(200);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    dl {
+      text-align: center;
+      dd {
+        width: rem(80);
+        height: rem(80);
+        &.singin {
+          background: url("../../assets/icon_sigin.png") no-repeat;
+          background-size: cover;
+        }
+        &.active {
+          background: url("../../assets/icon_active.png") no-repeat;
+          background-size: cover;
+        }
+        &.support {
+          background: url("../../assets/icon_support.png") no-repeat;
+          background-size: cover;
+        }
+        &.my {
+          background: url("../../assets/icon_my.png") no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

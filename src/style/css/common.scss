@@ -1,0 +1,447 @@
+.dot {
+  /*省略号*/
+  overflow: hidden;
+  text-overflow: ellipsis; // -webkit-line-clamp: 3; //控制行数隐藏
+  width: 100%;
+  white-space: nowrap;
+}
+
+
+/*常用规格样式*/
+
+.border-box {
+  box-sizing: border-box;
+}
+
+
+/*边框线*/
+
+.bd-b {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.bd-t {
+  border-top: 1px solid #d8d8d8;
+}
+
+.bd-r {
+  border-right: 1px solid #d8d8d8;
+}
+
+.bd-l {
+  border-left: 1px solid #d8d8d8;
+}
+
+.bd {
+  border: 1px solid #d8d8d8;
+}
+
+.bd-b2 {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.bd-t2 {
+  border-top: 1px solid #E5E5E5;
+}
+
+.bd-r2 {
+  border-right: 1px solid #E5E5E5;
+}
+
+.bd-l2 {
+  border-left: 1px solid #E5E5E5;
+}
+
+.bd2 {
+  border: 1px solid #E5E5E5;
+}
+
+
+/*对齐方式*/
+
+.vmiddle {
+  vertical-align: middle;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+
+/*间距规格*/
+
+.pb120 {
+  padding-bottom: 2.4rem;
+}
+
+.pb60 {
+  padding-bottom: 1.2rem;
+}
+
+.pb30 {
+  padding-bottom: 0.6rem;
+}
+
+.pb20 {
+  padding-bottom: 0.4rem;
+}
+
+.pb10 {
+  padding-bottom: 0.2rem;
+}
+
+.pt100 {
+  padding-top: 2rem;
+}
+
+.pt30 {
+  padding-top: 0.6rem;
+}
+
+.pt15 {
+  padding-top: 0.3rem;
+}
+
+
+/*上下0，左右系列*/
+
+.plr20 {
+  padding: 0 0.4rem;
+}
+
+.plr24 {
+  padding: 0 0.48rem;
+}
+
+.plr40 {
+  padding: 0 0.8rem;
+}
+
+.plr30 {
+  padding: 0 0.6rem;
+}
+
+.p-19-84 {
+  padding: 0.38rem 1.68rem;
+}
+
+.p20 {
+  padding: 0.4rem;
+}
+
+.p30 {
+  padding: 0.6rem;
+}
+
+.pd-l-r-30 {
+  padding: 0 0.6rem;
+}
+
+.p40 {
+  padding: 0.8rem;
+}
+
+.mb10 {
+  margin-bottom: 0.2rem;
+}
+
+.mb20 {
+  margin-bottom: 0.4rem;
+}
+
+.mb24 {
+  margin-bottom: 0.48rem;
+}
+
+.mb30 {
+  margin-bottom: 0.6rem;
+}
+
+.f-none {
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+/*margin系列*/
+
+.mb60 {
+  margin-bottom: 1.2rem;
+}
+
+.ml20 {
+  margin-left: 0.4rem;
+}
+
+.mr30 {
+  margin-right: 0.6rem;
+}
+
+.mr20 {
+  margin-right: .4rem;
+}
+
+.mr10 {
+  margin-right: .2rem;
+}
+
+.ml100 {
+  margin-left: 2rem;
+}
+
+.mt100 {
+  margin-top: 2rem;
+}
+
+.mt10 {
+  margin-top: 0.2rem;
+}
+
+.mt20 {
+  margin-top: 0.4rem;
+}
+
+.mt12 {
+  margin-top: .24rem;
+}
+
+.mt24 {
+  margin-top: 0.48rem;
+}
+
+.mt48 {
+  margin-top: 0.96rem;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flexgrow1 {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+
+.flexgrow4 {
+  flex-grow: 4;
+  -webkit-flex-grow: 4;
+}
+
+.in-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.wh100 {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.hide {
+  overflow: hidden;
+}
+
+.Yauto {
+  overflow-y: auto;
+}
+
+
+/*定位系列*/
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.bgfff {
+  background-color: #fff;
+}
+
+.cfff {
+  color: #fff;
+}
+
+.c000 {
+  color: #000;
+}
+
+.c9b9b9d {
+  color: #9b9b9d;
+}
+
+.c222 {
+  color: #222;
+}
+
+.ce33333 {
+  color: #e33333;
+}
+
+.c888 {
+  color: #888888;
+}
+
+.c666 {
+  color: #666;
+}
+
+.c999 {
+  color: #999;
+}
+
+.theme-red {
+  color: #ff2d2d;
+}
+
+.f20 {
+  font-size: 0.4rem;
+}
+
+.f24 {
+  font-size: 0.48rem;
+}
+
+.f26 {
+  font-size: 0.52rem;
+}
+
+.f28 {
+  font-size: 0.56rem;
+}
+
+.f36 {
+  font-size: 0.72rem;
+}
+
+.f30 {
+  font-size: 0.6rem;
+}
+
+.f80 {
+  font-size: 1.6rem;
+}
+
+.f40 {
+  font-size: 0.8rem;
+}
+
+.line60 {
+  line-height: 1.2rem;
+}
+
+.line50 {
+  line-height: 1rem;
+}
+
+.line90 {
+  line-height: 1.8rem;
+}
+
+.line80 {
+  line-height: 1.6rem;
+}
+
+.line100 {
+  line-height: 2rem;
+}
+
+.line30 {
+  line-height: 0.6rem;
+}
+
+.line140 {
+  line-height: 2.8rem;
+}
+
+.bd-radius {
+  border-radius: 8px;
+}
+
+//搭配v-cloak属性解决渲染闪烁
+[v-cloak] {
+  display: none;
+}
+
+// img[lazy="error"] {
+//   height: 100% !important;
+//   width: auto !important;
+// }
+//高斯模糊
+.filter {
+  filter: blur(20px);
+}
+
+
+/*一些通用组件样式*/
+
+.avatar100 {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.avatar80 {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+}
+
+.avatar60 {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+}
+
+.default-btn {
+  width: 100%;
+  text-align: center;
+  background-color: #fa5857;
+}
+
+.default-bottom-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fa5857;
+  color: #fff;
+  transform: translate3d(0, 0, 0);
+}
+
+.default-bottom-btn:active {
+  background-color: rgba(250, 88, 87, .88);
+}
+
+//禁用
+.disable {
+  background-color: #ccc !important;
+}

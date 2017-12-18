@@ -1,0 +1,22 @@
+//引入基础请求服务  
+import BaseService from '../base/baseService'
+//获取账户明细
+let uri = {
+  debug: '../../../static/mock/buyBenefit.json',
+  online: 'http://api.onent.tianyinculture.com/user/getFinance'
+}
+
+const BUY_INFO = BaseService.debug ? uri.debug : uri.online
+
+export default {
+  //请求数据
+  getBuy(callback, params) {
+    BaseService.getData(BUY_INFO, params).then((response) => {
+      callback(response.data || response);
+    }).catch((error) => {
+      console.log('数据请求失败啦');
+      throw new Error(error);
+    })
+  }
+
+}

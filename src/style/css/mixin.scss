@@ -1,0 +1,80 @@
+$BgColor:#f9f9f9;
+$themeRed:#fa5857; //适配单位
+$maskBg:rgba(0, 0, 0, .89); //mask通用背景
+@function rem($value) {
+  @return ($value/50)+rem;
+}
+
+//通用居中标题
+@mixin centerTitle() {
+  margin-top: rem(10);
+  height: rem(90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    position: relative;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: rem(-70);
+      top: 50%;
+      width: rem(50);
+      height: rem(2);
+      background-color: #eee;
+    }
+    &::after {
+      right: rem(-70);
+      left: auto;
+    }
+  }
+}
+
+//通用菜单条样式
+@mixin menuItem ($moreIcon) {
+  height: rem(100);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:active {
+    background-color: #f9f9f9;
+  }
+  &.more::after {
+    content: '';
+    width: rem(13);
+    height: rem(24);
+    background: url($moreIcon) no-repeat;
+    background-size: cover;
+  }
+}
+
+//通用商品展示卡片
+@mixin productCard() {
+  padding: rem(30);
+  background-color: #fff;
+  .con {
+    display: flex;
+    .p-img {
+      width: rem(280);
+      height: rem(170);
+      background-size: auto 100%;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+    .txt {
+      padding-left: rem(30);
+      h5 {
+        height: rem(90);
+        font-size: rem(26);
+        font-weight: normal;
+      }
+    }
+  }
+  .amount {
+    padding-top: rem(40);
+    display: flex;
+    justify-content: space-between;
+  }
+}
